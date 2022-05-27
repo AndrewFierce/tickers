@@ -7,3 +7,5 @@
   <li>To fill data in tables, please, run script "runscript.py"</li>
   <li>To look at the graph with tickers, please, run script app.py and open url "[http://localhost:5000/"</li>
 </ul>
+
+P.S. All the data will be saved in database PostgreSQL. Please don't forget to make migrations.
