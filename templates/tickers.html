@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tickers price</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/static/Chart.js"></script>
+    <script src="/static/utils.js"></script>
+    <script src="/static/tickers.js"></script>
+
+</head>
+<body>
+    <h1>Ticker graph</h1>
+    <h3>Choose ticker</h3>
+    <select type="text" id="tname" name="tname">
+        {% for ticker_name in context %}
+            <option value="{{ ticker_name }}">{{ ticker_name }}</option>
+        {% endfor %}
+    </select>
+
+    <br>
+	<br>
+    <!- Teg to add the graph -->
+    <div style="width:80%;">
+		<canvas id="myChart"></canvas>
+	</div>
+	<br>
+</body>
+</html>
